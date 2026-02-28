@@ -1,0 +1,86 @@
+#contanier{
+  font-family: "Lusitana", serif;
+}
+#title{
+    color: #C48B31;
+}
+.hero-body > .subtitle {
+  color: #C48B31 !important;
+}
+/* .navbar-dropdown, .navbar-dropdown a {
+  background-color: #05203F;
+} */
+
+nav {
+  padding: 0 5rem 0 5rem 0;
+  justify-content: center;
+}
+#HeroText {
+  text-align: center;
+  margin: 3rem;
+  color: #C48B31;
+}
+.card {
+  border-radius: 0;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #contanier{
+  margin: 0 2rem 0 2rem;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+#contanier{
+  margin: 0 2rem 0 2rem;
+}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+#contanier{
+  margin: 0 6rem 0 6rem;
+}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+#contanier{
+  /* margin: 0 10rem 0 10rem; */
+}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+#contanier{
+  margin: 0 20rem 0 20rem;
+}
+}
+/* // Set your brand colors
+
+$light-yellow: #C48B31;
+$dark-yellow: #B88130;
+$blue: #0F3F75;
+$green: #115D6A;
+$dark-blue: #05203F;
+$dark-green: #073138;
+$dark-red: #4d0000;
+
+
+// Path to Bulma's sass folder
+@use "bulma/sass" with (
+  $family-primary: '"Nunito", sans-serif',
+  $grey-dark: $light-yellow,
+  $grey-darker: $dark-yellow,
+  $primary: $dark-blue,
+  $info: $blue,
+  $link: $dark-green,
+  $success: $green,
+  $danger: $dark-red,
+  $control-border-width: 2px,
+  $input-shadow: none
+);
+
+// Import the Google Font
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,700"); */

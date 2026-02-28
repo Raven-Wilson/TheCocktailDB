@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <link rel="stylesheet" href="../css/my-bulma-project.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lusitana:wght@400;700&display=swap" rel="stylesheet">
+    <title>Home</title>
+  </head>
+  <body class="has-background-grey-lighter">
+        <header>
+            <nav class="navbar has-background-primary-dark" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                    </div>
+                <div id="navbarBasicExample" class="navbar-menu">
+                    <div class="navbar-start">
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link has-text-grey-dark">Alcoholic</a>
+                            <div class="navbar-dropdown">
+                                <a href="../index.html" class="navbar-item has-text-grey-dark">
+                                    Cocktails
+                                </a>
+                                <a href="shots.html" class="navbar-item has-text-grey-dark">
+                                    Shots
+                                </a>
+                                <hr class="navbar-divider has-text-grey-dark">
+                                <a href="beer.html" class="navbar-item has-text-grey-dark">
+                                    Beer
+                                </a>
+                            </div>
+                        </div>
+                                <a class="navbar-item has-text-grey-dark" href="non-alco.html"> Non-Alcoholic </a>
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link has-text-grey-dark">Search</a>
+                            <div class="navbar-dropdown">
+                                <a href="search-alco.html" class="navbar-item has-text-grey-dark">
+                                   Search by Alcohol
+                                </a>
+                                <hr class="navbar-divider has-text-grey-dark">                                    
+                                <a href="search-ingredients.html" class="navbar-item has-text-grey-dark">
+                                    Search by Ingredients
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    <div id="contanier">
+        <div id="HeroText">
+            <h1 class="title is-size-1">Find your Favourite Drink</h1>
+        </div>
+        <div class="fixed-grid has-4-cols-desktop has-3-cols-tablet has-1-cols-mobile column ">
+            <label class="label">Search by an Ingredient you Love</label>
+            <input class="input" id="cocktail" type="text" placeholder="Search Ingredient">
+            <button id="btn">Search</button>
+            <div class="grid" id="display_drink"></div>
+        </div>
+    </div>
+    <footer class="footer has-background-primary-dark">
+            <div class="content has-text-centered">
+                <p class="has-text-weight-bold">
+                Thank you to The Cocktail Database for making this website possible.<br />
+                </p>
+            </div>
+    </footer>
+    <script src="../scripts/search-ingredients.js"></script>
+  </body>
+</html>
