@@ -72,7 +72,6 @@ btnMarg.addEventListener('click', function () {
 });
 const btnScr = document.getElementById("btn_screwdriver");
 btnScr.addEventListener('click', function () {
-   console.log(btnMarg);
     fetch("https://www.thecocktaildb.com/api/json/v1/1/search.php?s=Screwdriver")
   .then((response) => response.json())
   .then((data => {
@@ -94,7 +93,6 @@ btnScr.addEventListener('click', function () {
 });
 const btnCol = document.getElementById("btn_colada");
 btnCol.addEventListener('click', function () {
-   console.log(btnMarg);
     fetch("https://www.thecocktaildb.com/api/json/v1/1/search.php?s=Colada")
   .then((response) => response.json())
   .then((data => {
@@ -116,7 +114,6 @@ btnCol.addEventListener('click', function () {
 });
 const btnMart = document.getElementById("btn_martini");
 btnMart.addEventListener('click', function () {
-   console.log(btnMarg);
     fetch("https://www.thecocktaildb.com/api/json/v1/1/search.php?s=Martini")
   .then((response) => response.json())
   .then((data => {
@@ -138,7 +135,6 @@ btnMart.addEventListener('click', function () {
 });
 const btnSpr = document.getElementById("btn_spritz");
 btnSpr.addEventListener('click', function () {
-   console.log(btnMarg);
     fetch("https://www.thecocktaildb.com/api/json/v1/1/search.php?s=Spritz")
   .then((response) => response.json())
   .then((data => {
