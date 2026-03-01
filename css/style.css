@@ -1,3 +1,6 @@
+body {
+  min-height: 100vh;
+}
 #contanier{
   font-family: "Lusitana", serif;
 }
@@ -6,6 +9,11 @@
 }
 .hero-body > .subtitle {
   color: #C48B31 !important;
+}
+.footer {
+  bottom: 0;
+  
+  width: 100%;
 }
 /* .navbar-dropdown, .navbar-dropdown a {
   background-color: #05203F;
@@ -22,6 +30,9 @@ nav {
 }
 .card {
   border-radius: 0;
+}
+#drinkImg {
+  border-radius: 0; 
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -40,22 +51,28 @@ nav {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 #contanier{
-  margin: 0 6rem 0 6rem;
+  margin: 0 4rem 0 4rem;
 }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
 #contanier{
-  /* margin: 0 10rem 0 10rem; */
+  margin: 0 4rem 0 4rem;
 }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
 #contanier{
+  margin: 0 10rem 0 10rem;
+}
+}
+@media only screen and (min-width: 1800px) {
+#contanier{
   margin: 0 20rem 0 20rem;
 }
+
 }
 /* // Set your brand colors
 

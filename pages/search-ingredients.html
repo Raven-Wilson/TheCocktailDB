@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lusitana:wght@400;700&display=swap" rel="stylesheet">
-    <title>Home</title>
+    <title>Search Ingredients</title>
   </head>
   <body class="has-background-grey-lighter">
         <header>
@@ -60,11 +60,20 @@
         <div id="HeroText">
             <h1 class="title is-size-1">Find your Favourite Drink</h1>
         </div>
-        <div class="fixed-grid has-4-cols-desktop has-3-cols-tablet has-1-cols-mobile column ">
-            <label class="label">Search by an Ingredient you Love</label>
-            <input class="input" id="cocktail" type="text" placeholder="Search Ingredient">
-            <button id="btn">Search</button>
-            <div class="grid" id="display_drink"></div>
+        <div>
+            <label class="label">Search by Ingredients you Love</label>
+            <input class="input" id="cocktail" type="text" placeholder="Search Cocktail">
+            <button id="btn_search">Search</button>
+            <div class="buttons columns mt-2 mb-2 is-gap-8">
+                <button id="btn_vodka" class="button column">Vodka</button>
+                <button id="btn_gin" class="button column">Gin</button>
+                <button id="btn_rum" class="button column">Rum</button>
+                <button id="btn_lime" class="button column">Lime</button>
+                <button id="btn_lemon" class="button column">Lemon</button>
+            </div>
+        </div>
+        <div class="grid ">
+            <div class="grid is-col-min-10 is-gap-4" id="display_drink"></div>
         </div>
     </div>
     <footer class="footer has-background-primary-dark">
