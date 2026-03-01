@@ -5,7 +5,14 @@ fetch("https://www.thecocktaildb.com/api/json/v1/1/search.php?s=Margarita")
     const showDrinks = document.querySelector("#display_drink");
     showDrinks.innerHTML = "";
     for (let i = 0; i < drinks.length; i++ ) {
-    showDrinks.innerHTML += `<div class="cell"><a href="./detail.html?id=${drinks[i].idDrink}"><img class="image is-1by1" src="${drinks[i].strDrinkThumb}"><p class="has-text-white-ter"> ${drinks[i].strDrink} </p></a></div>`;
+    showDrinks.innerHTML += `<div class="cell card m-2">
+      <a href="detail.html?id=${drinks[i].idDrink}">
+      <img class="image is-1by1" src="${drinks[i].strDrinkThumb}">
+      <div class="card-content">
+      <p class="content mt-2 mb-2 is-size-4" id="title"> ${drinks[i].strDrink} </p>
+      </div>
+      </a>
+      </div>`;
     }
   }))
   .catch((error) => console.error(error));
@@ -22,7 +29,14 @@ button.addEventListener('click', function () {
     const showDrinks = document.querySelector("#display_drink");
     showDrinks.innerHTML = "";
     for (let i = 0; i < drinks.length; i++ ) {
-    showDrinks.innerHTML += `<div class="cell"><a href="./detail.html?id=${drinks[i].idDrink}"><img class="image is-1by1" src="${drinks[i].strDrinkThumb}"><p class="has-text-white-ter"> ${drinks[i].strDrink} </p></a></div>`;
+    showDrinks.innerHTML += `<div class="cell card m-2">
+      <a href="detail.html?id=${drinks[i].idDrink}">
+      <img class="image is-1by1" src="${drinks[i].strDrinkThumb}">
+      <div class="card-content">
+      <p class="content mt-2 mb-2 is-size-4" id="title"> ${drinks[i].strDrink} </p>
+      </div>
+      </a>
+      </div>`;
     }
   }))
   .catch((error) => console.error(error));
@@ -44,7 +58,14 @@ btnMarg.addEventListener('click', function () {
     const showDrinks = document.querySelector("#display_drink");
     showDrinks.innerHTML = "";
     for (let i = 0; i < drinks.length; i++ ) {
-    showDrinks.innerHTML += `<div class="cell"><a href="./detail.html?id=${drinks[i].idDrink}"><img class="image is-1by1" src="${drinks[i].strDrinkThumb}"><p class="has-text-white-ter"> ${drinks[i].strDrink} </p></a></div>`;
+    showDrinks.innerHTML += `<div class="cell card m-2">
+      <a href="detail.html?id=${drinks[i].idDrink}">
+      <img class="image is-1by1" src="${drinks[i].strDrinkThumb}">
+      <div class="card-content">
+      <p class="content mt-2 mb-2 is-size-4" id="title"> ${drinks[i].strDrink} </p>
+      </div>
+      </a>
+      </div>`;
     }
   }))
   .catch((error) => console.error(error));
